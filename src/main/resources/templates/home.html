@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h3>Información recibida desde el controlador: <span th:text="${msg}"/></h3>
+<p th:text="|El nombre recibido es: ${nombre1}|"></p>
+<div th:text="'La cantidad recibida es: ' + ${cantidad1}"></div>
+
+<h3>Person 1</h3>
+<p>Nombre: <span th:text="${persona.nombre}"/></p>
+<p>Apellido: <span th:text="${persona.apellido}"/></p>
+<p>DNI: <span th:text="${persona.dni}"/></p>
+<p>Edad: <span th:text="${persona.edad}"/></p>
+</body>
+</html>
